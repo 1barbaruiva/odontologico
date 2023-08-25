@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoClinic</title>
+    <style>
+       
+        .wrapper{
+            margin: auto;
+            /* centralizar */
+            display: flex;
+            /* para transformar em blocos */
+            flex-direction: row;
+            /* temos tabem em coluna ->colum */
+            flex-wrap:wrap;
+            /* qdo ultilizamos o bloco eles ficam um do lado do outro mesmo que tenha tamnho total da tela  */
+            justify-content: center;
+            /* alinhando os blocos na horizontal dentro do principal (wrapper) */
+            align-items: center;
+             /* alinhando os blocos na vertical dentro do principal (wrapper) */
+            width: 90%;
+            /* largura do principal */
+            height: auto;
+            background-color: white;
+            padding: 0px;
+            /* espaço entre as caixas principais */
+        }
+
+        .boxtopo{
+            background-color: #297bc4;
+            width: 90%;
+            height: 50px;
+            margin: 0;
+            padding-top: 2%;
+        
+            
+        }
+        nav{
+	        float: right;
+        }
+
+        nav ul{
+            list-style: none; /*remover bolinhas*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav ul li{
+            float: left;
+        }
+
+        nav ul li a{
+            text-decoration: none; /*remover sublinhado*/
+            color: #ffffff;
+            padding: 15px 15px 10px 15px;
+            margin-right: 15px;
+        }
+
+        nav ul li a:hover{ /*hover (mouse sobre o link)*/
+            color: #fffcfc;
+            /*text-decoration: underline;*/
+            border-bottom: #fffcfc 2px solid;
+        }
+
+        
+        .boxlogo{
+            background-color:#297bc4;
+            width: 10%;
+            height: 50px;
+            margin:0;
+            padding-top: 2%;
+          
+        }
+        .imglogo{
+            width: 20%;
+            height: auto;
+            padding-left: 15px; 
+        }
+        .textologo{
+            font-size: 15px;
+            
+        }
+
+        .boxBanner{
+            background-color: white;
+            width:100%;
+            height: auto;
+            margin:0;
+            padding: 0;
+           
+        }
+        .imgbanner{
+            width: 100%;
+            height:auto;
+        }
+
+        
+
+
+        .boxtratamentos{
+           background-color: rgb(25, 87, 212);
+            width:20%;
+            height: 400px;
+            margin:1%;
+            padding: 0,5%;
+            border-radius: 20px;
+            color: white;
+            font-family: Century ;
+            text-align: center;
+           
+           
+        }
+
+        .imgtratamento{
+            width: 60px;
+            height: 60px;
+           
+        }
+
+         /*BREAK POINTS*/
+
+         @media screen and (min-width:375px){
+            .boxtratamentos{
+                width: 90%;
+                height: auto;
+                float:left;
+                margin:1%;
+                font-size: 1.3em;
+                padding: 10%;
+            }
+                
+        }
+
+        @media screen and (min-width:900px) {
+            .boxtratamentos{
+                width:20%;
+                height: auto;
+                float:left;
+                margin:1%;
+                padding:10%;
+            }
+        }
+
+        @media screen and (min-width:992px){
+            .boxtratamentos{
+                width: 20%;
+                height: auto;
+                float:left;
+                margin:1%;
+            }
+        }
+
+        @media screen and (min-width:1200px){
+            .boxtratamentos{
+                width: 20%;
+                height:300px;
+                float:left;
+                margin:1%;
+                padding: 10px;
+            }
+        }
+        
+/*fim*/
+
+
+        .boxharmonizar{
+            background-color:white;
+            width:40%;
+            height:auto;
+            margin:0;
+            padding: 0;
+            font-size: 1.1em;
+            
+        }
+        .imgharmonizar{
+            width:80%;
+            margin-left: 30px;
+            
+        }
+        .t1{
+            font-size: 30px;
+            color: #297bc4;
+            text-align:center ;
+            
+        }
+        .t2{
+            font-size: 7mm;
+        }
+
+
+        .boxRedesociais{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+           background-color:#297bc4;
+            width: 30%;
+            height: 240px;
+            margin:0px;
+            font-size: 1.1em;
+            padding-right: 3.31%;
+            padding-top:20px;
+           
+            
+        }
+       .imgredesociais{
+            width: 40px;
+            height:40px;
+            
+       }
+       .txtrede{
+        color: white;
+       }
+
+        .boxrodape{
+            background-color: rgb(25, 87, 212)  ;
+            width:100%;
+            height: 80px;
+            margin:0;
+            padding-top: 10px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        h1{
+            font-size: 20px;
+        }
+
+       
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="boxlogo">
+            <img src="imagens/dente.png"class="imglogo">
+            <p class="textologo">ODONTOCLINIC-2023</p> 
+         </div>
+        
+        <div class="boxtopo">
+           <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem somos</a> </li>
+                <li><a href="alinhamentos.html">Alinhamentos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+        </div>
+
+                    
+
+        <div class="boxBanner">
+           <img src="imagens/banner dentista.png" class="imgbanner" alt="">
+        </div>
+       
+        <div class="boxtratamentos">
+           <h1> IMPLANTES</h1>
+           <img src="imagens/dente.png"class="imgtratamento">
+           <p>Implante dentário é um procedimento que consiste na fixação de um pino de titânio no maxilar para servir de apoio para a colocação de um dente12345. O implante é indicado nos casos em que a pessoa perdeu um ou mais dentes devido a cáries, periodontite</p>
+        </div>
+
+        <div class="boxtratamentos">
+           <h1> PROTESES</h1>
+           <img src="imagens/dente.png"class="imgtratamento">
+           <p>Prótese fixa: é aparafusada na boca e não pode ser retirada. Pode ser feita de coroa, ponte ou implante dentário.</p>
+        </div>
+
+        <div class="boxtratamentos">
+            <H1>CLAREAMENTO</H1>
+            <img src="imagens/dente.png"class="imgtratamento">
+            <p>O que é o clareamento dental? O clareamento dental é um tratamento realizado com substâncias químicas, que modificam a cor do dente. O principal ingrediente que age no clareamento dental é oxigênio, que é proveniente do peróxido de hidrogênio ou peróxido de carbamida.</p>
+        </div>
+
+        <div class="boxtratamentos">
+            <H1>CIRURGIA</H1>
+            <img src="imagens/dente.png"class="imgtratamento">
+            <p>O que a harmonização faz no rosto?
+                A harmonização facial é capaz de, através de um conjunto de procedimentos, corrigir os principais ângulos do rosto e suavizar as linhas de expressão da pele, com o uso de produtos, sem a necessidade de incisões.</p>
+            
+        </div>
+
+
+
+
+        <div class="boxharmonizar">
+            
+            <img src="imagens/tratamento.jfif"class="imgharmonizar">
+        </div>
+
+        <div class="boxharmonizar">
+            <p class="t1"> HARMONIZAÇÃO FACIAL</p>
+            
+                <p class="t2">A harmonização facial costuma ser feita com preenchimento. O médico injeta a substância em pontos estratégicos da face a fim de diminuir as assimetrias e melhorar a proporcionalidade do rosto.</p>
+            
+        </div>
+
+        <div class="boxRedesociais">
+            <img src="imagens/dente.png"class="imgredesociais">
+            <p class="txtrede"> A OndoClinic</p>  
+            <img src="imagens/dente.png"class="imgredesociais">
+            <p class="txtrede"> Nossos Tratamentos</p>         
+         </div>
+
+         
+        <div class="boxRedesociais">
+            <img src="imagens/localizacao.png"class="imgredesociais">
+            <p class="txtrede">Ondotologia</p>
+            <img src="imagens/cirurgia.png"class="imgredesociais">
+            <p class="txtrede">Cirurgia</p>
+         </div>
+
+         <div class="boxRedesociais">
+            <img src="imagens/face.png"class="imgredesociais">
+            <p class="txtrede">Ondotologia</p>
+
+            <img src="imagens/insta.png"class="imgredesociais">
+            <p class="txtrede">Cirurgia</p>
+         </div>
+         
+
+         <div class="boxrodape">
+            <p>TODOS DIREITOS RESERVADOS A ODONTOCLINIC-2023</p>
+         </div>
+
+
+
+        
+    </div>
+</body>
+</html>
