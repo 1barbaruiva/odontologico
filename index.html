@@ -27,6 +27,18 @@
             padding: 0px;
             /* espaço entre as caixas principais */
         }
+       /* Configuração do wrapper para dipositivos */
+       
+       @media screen and (min-width:375px){
+            .wrapper{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .wrapper{
+                width: 90%;
+            }
+        }
 
         .boxtopo{
             background-color: #297bc4;
@@ -54,8 +66,8 @@
         nav ul li a{
             text-decoration: none; /*remover sublinhado*/
             color: #ffffff;
-            padding: 15px 15px 10px 15px;
-            margin-right: 15px;
+            padding: 15px 15px 15px 15px;
+            margin-right: 40px;
         }
 
         nav ul li a:hover{ /*hover (mouse sobre o link)*/
@@ -64,6 +76,43 @@
             border-bottom: #fffcfc 2px solid;
         }
 
+       
+        /* Configuração no menu para responsivo */
+
+        @media screen and (min-width:375px){
+            nav ul li a {
+                font-size: 13px;
+                padding:2px;}
+                
+            }
+
+        @media screen and (min-width:800px){
+            nav ul li a {
+                font-size: 13px;
+                padding:2px;
+                
+            }
+                
+            }    
+
+            @media screen and (min-width:1200px){
+            nav ul li a {
+                text-decoration: none; /*remover sublinhado*/
+            color: #ffffff;
+            padding-right:10px;
+            margin-right: 40px;
+            font-size: 15px;}
+            }
+            
+            @media screen and (min-width:1200px) {
+                nav ul li a:hover{ /*hover (mouse sobre o link)*/
+            color: #fffcfc;
+            /*text-decoration: underline;*/
+            border-bottom: #fffcfc 2px solid;
+            
+          
+        }
+            }
         
         .boxlogo{
             background-color:#297bc4;
@@ -102,7 +151,7 @@
         .boxtratamentos{
            background-color: rgb(25, 87, 212);
             width:20%;
-            height: 400px;
+            height:auto;
             margin:1%;
             padding: 0,5%;
             border-radius: 20px;
@@ -155,7 +204,7 @@
         @media screen and (min-width:1200px){
             .boxtratamentos{
                 width: 20%;
-                height:300px;
+                height:500px;
                 float:left;
                 margin:1%;
                 padding: 10px;
@@ -166,11 +215,11 @@
 
 
         .boxharmonizar{
-            background-color:white;
+            background-color: #ffffff;
             width:40%;
             height:auto;
-            margin:0;
-            padding: 0;
+            margin:10px;
+            padding:60%;
             font-size: 1.1em;
             
         }
@@ -186,7 +235,25 @@
             
         }
         .t2{
-            font-size: 7mm;
+            font-size: 1.1em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        @media screen and (min-width:375px){
+            .boxharmonizar{
+                width: 100%;
+                padding: 20px;
+                margin: -1px;
+                background-color: rgb(184, 202, 223);
+            }
+        }
+
+        @media screen and (min-width:1200px){
+            .boxharmonizar{
+                width: 40%;
+                padding: 25px;
+                margin: 10px;
+                background-color: #ffffff;
+            }
         }
 
 
@@ -196,7 +263,7 @@
             flex-wrap:wrap;
             justify-content: center;
             align-items: center;
-           background-color:#297bc4;
+           background-color:rgb(25, 87, 212);
             width: 30%;
             height: 240px;
             margin:0px;
@@ -216,7 +283,7 @@
        }
 
         .boxrodape{
-            background-color: rgb(25, 87, 212)  ;
+            background-color: #297bc4; ;
             width:100%;
             height: 80px;
             margin:0;
@@ -236,7 +303,7 @@
     <div class="wrapper">
         <div class="boxlogo">
             <img src="imagens/dente.png"class="imglogo">
-            <p class="textologo">ODONTOCLINIC-2023</p> 
+             
          </div>
         
         <div class="boxtopo">
